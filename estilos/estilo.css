@@ -1,0 +1,33 @@
+*{
+    font-family: monospace;
+}
+
+html, body{
+    height: 100%;   
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100%;
+}
+
+#boton{
+    margin: 60px 0;
+    font-size: 40px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo{
+    font-size: 3em;
+}
