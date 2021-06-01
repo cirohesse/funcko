@@ -1,9 +1,20 @@
-const boton = document.getElementById("divButton");
+const boton = document.getElementById("boton");
+const body = document.getElementById("body");
 const titulo = document.getElementById("titulo");
-const container = document.getElementById("container");
 
 function manejarClickBoton(){
-    titulo.style.backgroundColor = `rgb(${Math.floor(Math.random() * 96)+150}, ${Math.floor(Math.random() * 96)+150}, ${Math.floor(Math.random() * 96)+150})`
+    if (body.style.backgroundColor !== `black`){
+        body.style.backgroundColor = `black`
+        titulo.style.color = `white`
+        titulo.innerHTML = "Luz apagada"
+        boton.innerHTML = "PRENDER"
+    } else {
+        body.style.backgroundColor = `white`
+        titulo.style.color = `black`
+        titulo.innerHTML = "Luz prendida"
+        boton.innerHTML = "APAGAR"
+
+    }
 };
 
 boton.addEventListener("click", manejarClickBoton)
